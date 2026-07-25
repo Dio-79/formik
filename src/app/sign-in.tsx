@@ -7,6 +7,9 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import * as Yup from "yup";
 import { formStyles as styles } from "../styles/formStyles";
 
+
+
+
 const schema = Yup.object().shape({
 	email: Yup.string().email("Invalid email").required("Email is required"),
 	password: Yup.string().min(6, "Password must be at least 6 characters").required("Password is required")
